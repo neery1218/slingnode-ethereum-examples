@@ -8,6 +8,21 @@
     deploy_execution: true
     deploy_consensus: true
     deploy_validator: false
+    
+    network: mainnet
+    consensus_checkpoint_sync_url: https://sync-mainnet.beaconcha.in
+
+    # geth
+    geth_http_api: web3,eth,net,txpool,debug
+    geth_ws_api: web3,eth,net,txpool,debug
+
+    expose_execution_client_json_rpc_port_to_host: true
+    expose_execution_client_authrpc_port_to_host: true
+    expose_execution_client_json_rpc_websocket_port_to_host: true
+    expose_execution_client_metrics_port_to_host: true
+
+    execution_client_json_rpc_websocket_enabled: true
+
   
     suggested_fee_recipient: "0xa10214731A6D9eC03d36d1437796D1cEe6a061f7"
 
